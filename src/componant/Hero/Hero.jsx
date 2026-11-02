@@ -1,7 +1,13 @@
 
 import React from "react";
-import { ArrowUpRight, Download, Code2, Sparkles } from "lucide-react";
+import {
+  ArrowUpRight,
+  Download,
+  Code2,
+  Sparkles,
+} from "lucide-react";
 import "./Hero.scss";
+import img1 from "../../assets/hero.png";
 
 const Hero = () => {
   const technologies = [
@@ -20,13 +26,9 @@ const Hero = () => {
           <div className="hero-content">
             <span className="hero-label">HELLO, I'M</span>
 
-            <h1>
-              Sunil Shelke
-            </h1>
+            <h1>Sunil Shelke</h1>
 
-            <h2>
-              React.js & Full-Stack Developer
-            </h2>
+            <h2>React.js & Full-Stack Developer</h2>
 
             <p className="hero-description">
               I build modern, scalable and interactive web
@@ -37,16 +39,12 @@ const Hero = () => {
             <div className="hero-buttons">
               <a href="#work" className="hero-primary-btn">
                 View My Work
-                <ArrowUpRight size={19} />
+                <ArrowUpRight size={20} />
               </a>
 
-              <a
-                href="/resume.pdf"
-                className="hero-secondary-btn"
-                download
-              >
+              <a href="/resume.pdf" className="hero-secondary-btn" download>
                 Download CV
-                <Download size={18} />
+                <Download size={19} />
               </a>
             </div>
 
@@ -67,9 +65,11 @@ const Hero = () => {
 
             <div className="hero-image-frame"></div>
 
+            <div className="hero-frame-glow"></div>
+
             <div className="hero-profile">
               <img
-                src="/profile.png"
+                src={img1}
                 alt="Sunil Shelke - Full Stack Developer"
               />
             </div>
@@ -81,14 +81,15 @@ const Hero = () => {
             </div>
 
             <div className="hero-floating-icon">
-              <Sparkles size={25} />
+              <Sparkles size={27} />
             </div>
 
             <div className="hero-growth glass-card">
               <span>My Expertise</span>
               <h3>Full-Stack</h3>
+
               <div className="growth-content">
-                <Code2 size={20} />
+                <Code2 size={21} />
                 <span>Frontend + Backend</span>
               </div>
             </div>

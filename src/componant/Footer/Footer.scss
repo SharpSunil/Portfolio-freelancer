@@ -1,0 +1,21 @@
+
+.footer-parent {
+background:var(--white);
+  .footer-cont {
+    padding: 20px 25px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+
+    p {
+      font-size: 16px;
+      color: var(--text);
+      margin: 0;
+    
+
+    span {
+      color: var(--black);
+      font-weight: 700;
+    }
+  }
+}
+}

@@ -1,75 +1,94 @@
-
 .hero-parent {
-  padding-top: 20px;
-
+ 
+  padding: 20px 0px;
   .hero-cont {
     .hero-main {
       position: relative;
-      min-height: 530px;
-      padding: 65px 55px 40px;
+      min-height: 620px;
+      padding: 65px 55px 45px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
-      gap: 30px;
+      gap: 20px;
       overflow: hidden;
+      isolation: isolate;
       border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
 
       background:
         radial-gradient(
-          circle at 75% 40%,
-          rgba(184, 168, 255, 0.22),
-          transparent 40%
+          ellipse at 78% 45%,
+          rgba(177, 157, 255, 0.28),
+          transparent 48%
         ),
-        linear-gradient(
-          135deg,
-          #f4f3fc 0%,
-          #e9e7f8 55%,
-          #f5f3fc 100%
-        );
+        radial-gradient(
+          ellipse at 15% 10%,
+          rgba(255, 255, 255, 0.9),
+          transparent 45%
+        ),
+        linear-gradient(120deg, #f5f4fc 0%, #eae8f9 55%, #f3f0ff 100%);
 
-      border: 1px solid rgba(255, 255, 255, 0.75);
+      &::before {
+        content: "";
+        position: absolute;
+        width: 650px;
+        height: 650px;
+        right: -180px;
+        bottom: -420px;
+        border: 2px solid rgba(255, 255, 255, 0.55);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 18px rgba(255, 255, 255, 0.06),
+          0 0 0 40px rgba(255, 255, 255, 0.04);
+        transform: rotate(-35deg);
+        z-index: -1;
+        pointer-events: none;
+      }
 
       .hero-content {
         position: relative;
         z-index: 3;
+        max-width: 650px;
 
         .hero-label {
           display: inline-block;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 800;
           color: var(--accent);
           letter-spacing: 1px;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
         }
 
         h1 {
-          font-size: clamp(38px, 4vw, 62px);
+          font-size: clamp(45px, 4.5vw, 72px);
           font-weight: 800;
-          letter-spacing: -2.5px;
-          margin-bottom: 10px;
+          letter-spacing: -3px;
+          line-height: 1.05;
+          margin-bottom: 12px;
           color: var(--black);
         }
 
         h2 {
-          font-size: clamp(23px, 2.5vw, 36px);
+          font-size: clamp(25px, 2.6vw, 40px);
           font-weight: 800;
           color: var(--accent);
-          letter-spacing: -1px;
-          margin-bottom: 20px;
+          letter-spacing: -1.3px;
+          line-height: 1.15;
+          margin-bottom: 24px;
         }
 
         .hero-description {
-          max-width: 480px;
-          font-size: 14px;
+          max-width: 520px;
+          font-size: 15px;
           line-height: 1.8;
           color: var(--text);
-          margin-bottom: 28px;
+          margin-bottom: 30px;
         }
 
         .hero-buttons {
           display: flex;
           align-items: center;
-          gap: 15px;
+          gap: 16px;
           flex-wrap: wrap;
 
           a {
@@ -77,21 +96,17 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
-            padding: 13px 23px;
+            padding: 15px 25px;
             border-radius: 50px;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 700;
-            transition: var(--trans);
+            transition: all 0.35s ease;
           }
 
           .hero-primary-btn {
-            color: var(--white);
-            background: linear-gradient(
-              135deg,
-              #191927,
-              #29283e
-            );
-            box-shadow: 0 8px 20px rgba(25, 25, 39, 0.2);
+            color: white;
+            background: linear-gradient(135deg, #171625, #29283e);
+            box-shadow: 0 10px 25px rgba(25, 25, 39, 0.2);
 
             &:hover {
               transform: translateY(-4px);
@@ -101,12 +116,12 @@
 
           .hero-secondary-btn {
             color: var(--black);
-            background: rgba(255, 255, 255, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(15px);
 
             &:hover {
-              background: var(--white);
+              background: white;
               color: var(--accentDark);
               transform: translateY(-4px);
             }
@@ -118,24 +133,24 @@
 
           .trusted-label {
             display: block;
-            font-size: 12px;
+            font-size: 13px;
             color: var(--text2);
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             font-weight: 600;
           }
 
           .technology-list {
             display: flex;
             align-items: center;
-            gap: 22px;
+            gap: 25px;
             flex-wrap: wrap;
 
             span {
-              font-size: 13px;
+              font-size: 14px;
               font-weight: 700;
-              color: #8886a0;
+              color: #85829f;
               white-space: nowrap;
-              transition: var(--trans);
+              transition: all 0.3s ease;
 
               &:hover {
                 color: var(--accentDark);
@@ -147,63 +162,87 @@
 
       .hero-visual {
         position: relative;
-        height: 440px;
+        height: 540px;
+        width: 100%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        isolation: isolate;
 
         .hero-image-frame {
           position: absolute;
-          width: 75%;
-          height: 85%;
+          width: 77%;
+          height: 82%;
           top: 5%;
-          left: 12%;
-          border: 3px solid rgba(255, 255, 255, 0.65);
-          border-radius: 120px 120px 90px 90px;
+          right: 7%;
+          border: 2px solid rgba(255, 255, 255, 0.8);
+          border-radius: 135px 135px 110px 110px;
+          background: rgba(255, 255, 255, 0.08);
+          backdrop-filter: blur(5px);
           box-shadow:
-            inset 0 0 20px rgba(255, 255, 255, 0.5),
-            0 0 30px rgba(145, 120, 233, 0.1);
+            inset 0 0 25px rgba(255, 255, 255, 0.5),
+            0 0 35px rgba(145, 120, 233, 0.12);
+          z-index: 0;
+        }
+
+        .hero-frame-glow {
+          position: absolute;
+          width: 75%;
+          height: 75%;
+          right: 5%;
+          bottom: 0;
+          border-radius: 50%;
+          background: rgba(171, 150, 255, 0.22);
+          filter: blur(75px);
+          z-index: 0;
+          pointer-events: none;
         }
 
         .hero-profile {
-          position: relative;
+          position: absolute;
+          bottom: 0;
+          right: 5%;
           z-index: 2;
           width: 82%;
           height: 100%;
           display: flex;
           align-items: flex-end;
           justify-content: center;
+          overflow: hidden;
 
           img {
+            display: block;
             width: 100%;
             height: 100%;
             object-fit: contain;
             object-position: center bottom;
-            filter: drop-shadow(
-              0 15px 25px rgba(35, 29, 65, 0.12)
-            );
+            filter: drop-shadow(0 15px 25px rgba(35, 29, 65, 0.13));
           }
         }
 
         .hero-experience {
           position: absolute;
-          top: 5%;
+          top: 2%;
           right: 0;
-          z-index: 4;
-          width: 120px;
-          min-height: 120px;
+          z-index: 5;
+          width: 125px;
+          min-height: 125px;
           padding: 15px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          border-radius: 18px;
+          border-radius: 22px;
+          background: rgba(255, 255, 255, 0.58);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.9);
 
           h3 {
-            font-size: 38px;
-            color: var(--white);
+            font-size: 43px;
+            color: white;
             line-height: 1;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
           }
 
           span {
@@ -216,50 +255,55 @@
         .hero-floating-icon {
           position: absolute;
           left: 0;
-          bottom: 35%;
-          z-index: 4;
-          width: 65px;
-          height: 65px;
+          bottom: 34%;
+          z-index: 5;
+          width: 72px;
+          height: 72px;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: 50%;
           color: var(--accent);
-          background: rgba(255, 255, 255, 0.55);
-          backdrop-filter: blur(15px);
-          border: 1px solid rgba(255, 255, 255, 0.9);
+          background: rgba(255, 255, 255, 0.65);
+          backdrop-filter: blur(18px);
+          border: 1px solid rgba(255, 255, 255, 0.95);
           box-shadow: var(--shadow);
         }
 
         .hero-growth {
           position: absolute;
-          right: 0;
-          bottom: 12%;
-          z-index: 4;
-          width: 220px;
-          padding: 20px;
-          border-radius: 20px;
+          right: -2%;
+          bottom: 9%;
+          z-index: 5;
+          width: 245px;
+          padding: 23px;
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.62);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.95);
+          box-shadow: var(--shadow);
 
           > span {
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 600;
             color: var(--text);
           }
 
           h3 {
-            font-size: 22px;
-            margin: 8px 0 12px;
+            font-size: 27px;
+            margin: 9px 0 13px;
             color: var(--black);
           }
 
           .growth-content {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             color: var(--accent);
 
             span {
-              font-size: 11px;
+              font-size: 12px;
               color: var(--text);
               font-weight: 600;
             }
@@ -270,43 +314,48 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1100px) {
   .hero-parent {
     .hero-cont {
       .hero-main {
-        padding: 45px 30px;
-        grid-template-columns: 1fr 0.9fr;
-        min-height: 480px;
+        min-height: 540px;
+        padding: 45px 35px;
+        grid-template-columns: 1fr 0.95fr;
+        gap: 10px;
 
         .hero-content {
           h1 {
-            font-size: 42px;
+            font-size: 48px;
           }
 
           h2 {
-            font-size: 25px;
+            font-size: 27px;
           }
 
           .hero-technologies {
             margin-top: 35px;
 
             .technology-list {
-              gap: 13px;
+              gap: 15px;
             }
           }
         }
 
         .hero-visual {
-          height: 380px;
+          height: 420px;
+
+          .hero-profile {
+            width: 88%;
+          }
 
           .hero-experience {
-            width: 95px;
-            min-height: 100px;
+            width: 100px;
+            min-height: 105px;
           }
 
           .hero-growth {
-            width: 180px;
-            padding: 15px;
+            width: 190px;
+            padding: 17px;
           }
         }
       }
@@ -316,8 +365,6 @@
 
 @media (max-width: 768px) {
   .hero-parent {
-    padding-top: 15px;
-
     .hero-cont {
       .hero-main {
         grid-template-columns: 1fr;
@@ -326,15 +373,15 @@
 
         .hero-content {
           h1 {
-            font-size: 40px;
+            font-size: 44px;
           }
 
           h2 {
-            font-size: 25px;
+            font-size: 27px;
           }
 
           .hero-description {
-            font-size: 13px;
+            font-size: 14px;
           }
 
           .hero-technologies {
@@ -343,23 +390,22 @@
         }
 
         .hero-visual {
-          height: 400px;
-          max-width: 480px;
-          width: 100%;
+          height: 440px;
+          max-width: 500px;
           margin: auto;
 
           .hero-profile {
-            width: 75%;
+            width: 82%;
+            right: 8%;
           }
 
           .hero-experience {
             right: 0;
-            top: 0;
           }
 
           .hero-growth {
             right: 0;
-            bottom: 8%;
+            bottom: 7%;
           }
         }
       }
@@ -371,17 +417,22 @@
   .hero-parent {
     .hero-cont {
       .hero-main {
-        padding: 35px 18px 20px;
+        padding: 32px 18px 20px;
         border-radius: 22px;
 
         .hero-content {
           h1 {
-            font-size: 34px;
+            font-size: 35px;
             letter-spacing: -1.5px;
           }
 
           h2 {
             font-size: 22px;
+            letter-spacing: -0.5px;
+          }
+
+          .hero-description {
+            font-size: 13px;
           }
 
           .hero-buttons {
@@ -395,6 +446,8 @@
           }
 
           .hero-technologies {
+            margin-top: 30px;
+
             .technology-list {
               gap: 12px;
 
@@ -406,24 +459,27 @@
         }
 
         .hero-visual {
-          height: 330px;
+          height: 350px;
 
           .hero-image-frame {
-            width: 80%;
-            left: 10%;
+            width: 82%;
+            right: 6%;
+            height: 85%;
           }
 
           .hero-profile {
-            width: 82%;
+            width: 90%;
+            right: 5%;
           }
 
           .hero-experience {
-            width: 75px;
-            min-height: 80px;
+            width: 78px;
+            min-height: 85px;
             padding: 8px;
+            border-radius: 15px;
 
             h3 {
-              font-size: 27px;
+              font-size: 28px;
             }
 
             span {
@@ -444,9 +500,18 @@
           .hero-growth {
             width: 155px;
             padding: 12px;
+            border-radius: 16px;
 
             h3 {
               font-size: 17px;
+            }
+
+            .growth-content {
+              gap: 7px;
+
+              span {
+                font-size: 10px;
+              }
             }
           }
         }
