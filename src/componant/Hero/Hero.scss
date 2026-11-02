@@ -1,0 +1,456 @@
+
+.hero-parent {
+  padding-top: 20px;
+
+  .hero-cont {
+    .hero-main {
+      position: relative;
+      min-height: 530px;
+      padding: 65px 55px 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 30px;
+      overflow: hidden;
+      border-radius: 30px;
+
+      background:
+        radial-gradient(
+          circle at 75% 40%,
+          rgba(184, 168, 255, 0.22),
+          transparent 40%
+        ),
+        linear-gradient(
+          135deg,
+          #f4f3fc 0%,
+          #e9e7f8 55%,
+          #f5f3fc 100%
+        );
+
+      border: 1px solid rgba(255, 255, 255, 0.75);
+
+      .hero-content {
+        position: relative;
+        z-index: 3;
+
+        .hero-label {
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 800;
+          color: var(--accent);
+          letter-spacing: 1px;
+          margin-bottom: 15px;
+        }
+
+        h1 {
+          font-size: clamp(38px, 4vw, 62px);
+          font-weight: 800;
+          letter-spacing: -2.5px;
+          margin-bottom: 10px;
+          color: var(--black);
+        }
+
+        h2 {
+          font-size: clamp(23px, 2.5vw, 36px);
+          font-weight: 800;
+          color: var(--accent);
+          letter-spacing: -1px;
+          margin-bottom: 20px;
+        }
+
+        .hero-description {
+          max-width: 480px;
+          font-size: 14px;
+          line-height: 1.8;
+          color: var(--text);
+          margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          flex-wrap: wrap;
+
+          a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 13px 23px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            transition: var(--trans);
+          }
+
+          .hero-primary-btn {
+            color: var(--white);
+            background: linear-gradient(
+              135deg,
+              #191927,
+              #29283e
+            );
+            box-shadow: 0 8px 20px rgba(25, 25, 39, 0.2);
+
+            &:hover {
+              transform: translateY(-4px);
+              box-shadow: var(--shadowHover);
+            }
+          }
+
+          .hero-secondary-btn {
+            color: var(--black);
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(15px);
+
+            &:hover {
+              background: var(--white);
+              color: var(--accentDark);
+              transform: translateY(-4px);
+            }
+          }
+        }
+
+        .hero-technologies {
+          margin-top: 55px;
+
+          .trusted-label {
+            display: block;
+            font-size: 12px;
+            color: var(--text2);
+            margin-bottom: 15px;
+            font-weight: 600;
+          }
+
+          .technology-list {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            flex-wrap: wrap;
+
+            span {
+              font-size: 13px;
+              font-weight: 700;
+              color: #8886a0;
+              white-space: nowrap;
+              transition: var(--trans);
+
+              &:hover {
+                color: var(--accentDark);
+              }
+            }
+          }
+        }
+      }
+
+      .hero-visual {
+        position: relative;
+        height: 440px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .hero-image-frame {
+          position: absolute;
+          width: 75%;
+          height: 85%;
+          top: 5%;
+          left: 12%;
+          border: 3px solid rgba(255, 255, 255, 0.65);
+          border-radius: 120px 120px 90px 90px;
+          box-shadow:
+            inset 0 0 20px rgba(255, 255, 255, 0.5),
+            0 0 30px rgba(145, 120, 233, 0.1);
+        }
+
+        .hero-profile {
+          position: relative;
+          z-index: 2;
+          width: 82%;
+          height: 100%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+            filter: drop-shadow(
+              0 15px 25px rgba(35, 29, 65, 0.12)
+            );
+          }
+        }
+
+        .hero-experience {
+          position: absolute;
+          top: 5%;
+          right: 0;
+          z-index: 4;
+          width: 120px;
+          min-height: 120px;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 18px;
+
+          h3 {
+            font-size: 38px;
+            color: var(--white);
+            line-height: 1;
+            margin-bottom: 8px;
+          }
+
+          span {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--black);
+          }
+        }
+
+        .hero-floating-icon {
+          position: absolute;
+          left: 0;
+          bottom: 35%;
+          z-index: 4;
+          width: 65px;
+          height: 65px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          color: var(--accent);
+          background: rgba(255, 255, 255, 0.55);
+          backdrop-filter: blur(15px);
+          border: 1px solid rgba(255, 255, 255, 0.9);
+          box-shadow: var(--shadow);
+        }
+
+        .hero-growth {
+          position: absolute;
+          right: 0;
+          bottom: 12%;
+          z-index: 4;
+          width: 220px;
+          padding: 20px;
+          border-radius: 20px;
+
+          > span {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text);
+          }
+
+          h3 {
+            font-size: 22px;
+            margin: 8px 0 12px;
+            color: var(--black);
+          }
+
+          .growth-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent);
+
+            span {
+              font-size: 11px;
+              color: var(--text);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-parent {
+    .hero-cont {
+      .hero-main {
+        padding: 45px 30px;
+        grid-template-columns: 1fr 0.9fr;
+        min-height: 480px;
+
+        .hero-content {
+          h1 {
+            font-size: 42px;
+          }
+
+          h2 {
+            font-size: 25px;
+          }
+
+          .hero-technologies {
+            margin-top: 35px;
+
+            .technology-list {
+              gap: 13px;
+            }
+          }
+        }
+
+        .hero-visual {
+          height: 380px;
+
+          .hero-experience {
+            width: 95px;
+            min-height: 100px;
+          }
+
+          .hero-growth {
+            width: 180px;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-parent {
+    padding-top: 15px;
+
+    .hero-cont {
+      .hero-main {
+        grid-template-columns: 1fr;
+        padding: 40px 25px 25px;
+        gap: 35px;
+
+        .hero-content {
+          h1 {
+            font-size: 40px;
+          }
+
+          h2 {
+            font-size: 25px;
+          }
+
+          .hero-description {
+            font-size: 13px;
+          }
+
+          .hero-technologies {
+            margin-top: 30px;
+          }
+        }
+
+        .hero-visual {
+          height: 400px;
+          max-width: 480px;
+          width: 100%;
+          margin: auto;
+
+          .hero-profile {
+            width: 75%;
+          }
+
+          .hero-experience {
+            right: 0;
+            top: 0;
+          }
+
+          .hero-growth {
+            right: 0;
+            bottom: 8%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-parent {
+    .hero-cont {
+      .hero-main {
+        padding: 35px 18px 20px;
+        border-radius: 22px;
+
+        .hero-content {
+          h1 {
+            font-size: 34px;
+            letter-spacing: -1.5px;
+          }
+
+          h2 {
+            font-size: 22px;
+          }
+
+          .hero-buttons {
+            gap: 10px;
+
+            a {
+              padding: 12px 15px;
+              gap: 10px;
+              font-size: 11px;
+            }
+          }
+
+          .hero-technologies {
+            .technology-list {
+              gap: 12px;
+
+              span {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+
+        .hero-visual {
+          height: 330px;
+
+          .hero-image-frame {
+            width: 80%;
+            left: 10%;
+          }
+
+          .hero-profile {
+            width: 82%;
+          }
+
+          .hero-experience {
+            width: 75px;
+            min-height: 80px;
+            padding: 8px;
+
+            h3 {
+              font-size: 27px;
+            }
+
+            span {
+              font-size: 9px;
+            }
+          }
+
+          .hero-floating-icon {
+            width: 45px;
+            height: 45px;
+            left: 0;
+
+            svg {
+              width: 19px;
+            }
+          }
+
+          .hero-growth {
+            width: 155px;
+            padding: 12px;
+
+            h3 {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
