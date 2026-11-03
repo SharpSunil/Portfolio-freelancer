@@ -1,0 +1,438 @@
+
+.about_page-parent {
+  padding: 15px 0 30px;
+
+  .about-page-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .about-page-label {
+    display: block;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    margin-bottom: 12px;
+  }
+
+  .about-page-hero {
+    padding: 55px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background:
+      radial-gradient(
+        ellipse at 85% 30%,
+        rgba(177, 157, 255, 0.2),
+        transparent 45%
+      ),
+      rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    .about-page-heading {
+      max-width: 800px;
+
+      h1 {
+        font-size: clamp(35px, 4vw, 55px);
+        line-height: 1.12;
+        letter-spacing: -2px;
+        margin-bottom: 18px;
+
+        span {
+          color: var(--accent);
+        }
+      }
+
+      p {
+        max-width: 650px;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  .about-page-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+
+    .about-stat {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 9px;
+
+      svg {
+        color: var(--accent);
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+
+      span {
+        font-size: 12px;
+        color: var(--text2);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .about-intro-section,
+  .about-skills-section {
+    padding: 35px;
+  }
+
+  .about-intro-section {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 40px;
+
+    .about-section-title h2 {
+      font-size: 30px;
+    }
+
+    .about-intro-content {
+      p {
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .about-section-title {
+    margin-bottom: 25px;
+
+    h2 {
+      font-size: clamp(25px, 3vw, 34px);
+      margin-bottom: 12px;
+    }
+
+    > p {
+      max-width: 650px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+
+  .about-expertise-section {
+    padding: 35px;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+  }
+
+  .about-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+
+    .expertise-card {
+      position: relative;
+      padding: 25px;
+      min-height: 195px;
+      transition: all 0.35s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: var(--shadowHover);
+      }
+
+      .expertise-icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent);
+        background: rgba(145, 120, 233, 0.12);
+        margin-bottom: 18px;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 1.7;
+        max-width: 90%;
+      }
+
+      .expertise-arrow {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: var(--accent);
+        transition: transform 0.3s ease;
+      }
+
+      &:hover .expertise-arrow {
+        transform: translate(4px, -4px);
+      }
+    }
+  }
+
+  .about-skills-section {
+    .about-tech-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+
+      .about-tech-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        border-radius: 13px;
+        background: rgba(255, 255, 255, 0.48);
+        border: 1px solid rgba(255, 255, 255, 0.85);
+        transition: all 0.3s ease;
+
+        svg {
+          color: var(--accent);
+          flex-shrink: 0;
+        }
+
+        span {
+          font-size: 13px;
+          font-weight: 700;
+          color: var(--text);
+        }
+
+        &:hover {
+          transform: translateY(-3px);
+          background: white;
+        }
+      }
+    }
+  }
+
+  .about-approach-section {
+    padding: 35px;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .about-approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+    .approach-card {
+      padding: 22px;
+      min-height: 190px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .approach-number {
+        font-size: 27px;
+        font-weight: 800;
+        color: var(--accent);
+        margin-bottom: 22px;
+      }
+
+      h3 {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .about-cta {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    h2 {
+      font-size: clamp(23px, 3vw, 32px);
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .about-cta-btn {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 23px;
+      border-radius: 50px;
+      background: var(--gradient);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadowHover);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about_page-parent {
+    .about-page-hero,
+    .about-intro-section,
+    .about-expertise-section,
+    .about-skills-section,
+    .about-approach-section,
+    .about-cta {
+      padding: 28px;
+    }
+
+    .about-tech-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-approach-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about_page-parent {
+    .about-intro-section {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .about-page-stats {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+
+      .about-stat {
+        padding: 15px;
+
+        h3 {
+          font-size: 20px;
+        }
+
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .about-expertise-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-cta {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about_page-parent {
+    .about-page-cont {
+      gap: 15px;
+    }
+
+    .about-page-hero,
+    .about-intro-section,
+    .about-expertise-section,
+    .about-skills-section,
+    .about-approach-section,
+    .about-cta {
+      padding: 22px 18px;
+      border-radius: 20px;
+    }
+
+    .about-page-hero {
+      .about-page-heading {
+        h1 {
+          font-size: 34px;
+          letter-spacing: -1px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .about-page-stats {
+      grid-template-columns: 1fr;
+      margin-top: 25px;
+
+      .about-stat {
+        padding: 17px;
+      }
+    }
+
+    .about-intro-section {
+      .about-section-title h2 {
+        font-size: 25px;
+      }
+
+      .about-intro-content p {
+        font-size: 13px;
+      }
+    }
+
+    .about-section-title h2 {
+      font-size: 25px;
+    }
+
+    .about-tech-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 9px;
+
+      .about-tech-item {
+        padding: 12px 9px;
+        gap: 7px;
+
+        span {
+          font-size: 11px;
+        }
+      }
+    }
+
+    .about-approach-grid {
+      grid-template-columns: 1fr;
+
+      .approach-card {
+        min-height: auto;
+      }
+    }
+
+    .about-cta {
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+}
