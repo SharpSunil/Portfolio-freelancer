@@ -1,6 +1,11 @@
 
-import React from 'react'
-import { ArrowUpRight } from 'lucide-react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
+
+import 'swiper/css'
 import './Project.scss'
 
 const projects = [
@@ -8,25 +13,27 @@ const projects = [
     title: 'Healthcare Management System',
     category: 'React.js, Dashboard & API Integration',
     image: '/projects/healthcare.png',
-    link: '#'
+    slug: 'healthcare-management-system'
   },
   {
     title: 'Digital Agency Website',
     category: 'React.js, UI Development',
     image: '/projects/agency.png',
-    link: '#'
+    slug: 'digital-agency-website'
   },
   {
     title: 'NGO Website',
     category: 'Website Development, WordPress',
     image: '/projects/ngo.png',
-    link: '#'
+    slug: 'ngo-website'
   }
 ]
 
 const Project = () => {
+  const [swiper, setSwiper] = useState(null)
+
   return (
-    <section className="project-parent parent">
+    <section className="project-parent parent" id="project">
       <div className="project-cont container">
 
         <div className="project-heading">
@@ -35,40 +42,79 @@ const Project = () => {
             <h2>Selected Work</h2>
           </div>
 
-          <a href="#projects" className="project-view-all">
-            View All Projects
-            <span>
-              <ArrowUpRight size={20} />
-            </span>
-          </a>
+          <div className="project-navigation">
+            <button
+              type="button"
+              className="project-prev"
+              onClick={() => swiper?.slidePrev()}
+              aria-label="Previous projects"
+            >
+              <ChevronLeft size={21} />
+            </button>
+
+            <button
+              type="button"
+              className="project-next"
+              onClick={() => swiper?.slideNext()}
+              aria-label="Next projects"
+            >
+              <ChevronRight size={21} />
+            </button>
+          </div>
         </div>
 
-        <div className="project-grid" id="projects">
+        <Swiper
+          modules={[Autoplay]}
+          onSwiper={setSwiper}
+          loop={projects.length > 3}
+          spaceBetween={20}
+          slidesPerView={3}
+          speed={700}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 15
+            },
+            576: {
+              slidesPerView: 2,
+              spaceBetween: 15
+            },
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            }
+          }}
+          className="project-swiper"
+        >
           {projects.map((project, index) => (
-            <a
-              href={project.link}
-              className={`project-card project-card-${index + 1}`}
-              key={index}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-              </div>
-
-              <div className="project-info">
-                <div>
-                  <h3>{project.title}</h3>
-                  <p>{project.category}</p>
+            <SwiperSlide key={project.slug}>
+              <Link
+                to={`/projects/${project.slug}`}
+                className={`project-card project-card-${index + 1}`}
+              >
+                <div className="project-image">
+                  <img src={project.image} alt={project.title} />
                 </div>
 
-                <span className="project-arrow">
-                  <ArrowUpRight size={22} />
-                </span>
-              </div>
-            </a>
+                <div className="project-info">
+                  <div>
+                    <h3>{project.title}</h3>
+                    <p>{project.category}</p>
+                  </div>
+
+                  <span className="project-arrow">
+                    <ArrowUpRight size={22} />
+                  </span>
+                </div>
+              </Link>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
       </div>
     </section>

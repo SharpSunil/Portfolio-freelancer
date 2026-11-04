@@ -44,7 +44,7 @@ const processSteps = [
 
 const Process = () => {
   return (
-    <section className="process-parent parent">
+    <section className="process-parent parent" id="process">
       <div className="process-cont container">
 
         <div className="process-heading">

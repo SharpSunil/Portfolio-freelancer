@@ -49,7 +49,7 @@ const Testimonial = () => {
   const [swiperInstance, setSwiperInstance] = useState(null)
 
   return (
-    <section className="testimonial-parent parent">
+    <section className="testimonial-parent parent" id="testimonial">
       <div className="testimonial-cont container">
 
         <div className="testimonial-heading">

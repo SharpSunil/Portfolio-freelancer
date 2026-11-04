@@ -45,7 +45,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="contact-parent parent">
+    <section className="contact-parent parent" id="contact">
       <div className="contact-cont container">
 
         <div className="contact-content">
