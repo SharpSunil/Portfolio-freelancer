@@ -1,6 +1,12 @@
 
 import React from "react";
-import { ArrowUpRight, Code2, Layers3, BriefcaseBusiness } from "lucide-react";
+import { Link } from "react-router-dom";
+import {
+  ArrowUpRight,
+  Code2,
+  Layers3,
+  BriefcaseBusiness,
+} from "lucide-react";
 import "./About.scss";
 
 const About = () => {
@@ -65,12 +71,12 @@ const About = () => {
               that deliver real value.
             </p>
 
-            <a href="#work" className="about-button">
+            <Link to="/about" className="about-button">
               More About Me
               <span>
                 <ArrowUpRight size={18} />
               </span>
-            </a>
+            </Link>
           </div>
 
         </section>

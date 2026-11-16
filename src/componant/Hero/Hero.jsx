@@ -37,7 +37,7 @@ const Hero = () => {
             </p>
 
             <div className="hero-buttons">
-              <a href="#work" className="hero-primary-btn">
+              <a href="#project" className="hero-primary-btn">
                 View My Work
                 <ArrowUpRight size={20} />
               </a>
