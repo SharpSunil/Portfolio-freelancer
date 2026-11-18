@@ -83,7 +83,7 @@ const Header = () => {
                 key={index}
                 className={
                   (location.pathname === "/" && index === 0) ||
-                  location.pathname === item.path
+                    location.pathname === item.path
                     ? "active"
                     : ""
                 }
