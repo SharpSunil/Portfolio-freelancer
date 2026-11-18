@@ -6,12 +6,11 @@ import {
   Database,
   Globe,
   Layers,
-  Rocket,
   BriefcaseBusiness,
-  GraduationCap,
   ArrowUpRight,
   CheckCircle2
 } from 'lucide-react'
+import aboutImage from '../../assets/hero.png'
 import './About_page.scss'
 
 const About_page = () => {
@@ -39,22 +38,10 @@ const About_page = () => {
   ]
 
   const technologies = [
-    'React.js',
-    'Next.js',
-    'JavaScript',
-    'HTML5',
-    'CSS3',
-    'SCSS',
-    'Bootstrap',
-    'Node.js',
-    'Express.js',
-    'PHP',
-    'MySQL',
-    'WordPress',
-    'REST APIs',
-    'Git',
-    'GSAP',
-    'Swiper'
+    'React.js', 'Next.js', 'JavaScript', 'HTML5',
+    'CSS3', 'SCSS', 'Bootstrap', 'Node.js',
+    'Express.js', 'PHP', 'MySQL', 'WordPress',
+    'REST APIs', 'Git', 'GSAP', 'Swiper'
   ]
 
   const highlights = [
@@ -73,7 +60,12 @@ const About_page = () => {
         <section className="about-page-hero">
           <div className="about-page-heading">
             <span className="about-page-label">ABOUT ME</span>
-            <h1>Turning Ideas Into <span>Digital Experiences</span></h1>
+
+            <h1>
+              Turning Ideas Into
+              <span> Digital Experiences</span>
+            </h1>
+
             <p>
               I'm Sunil Shelke, a Full-Stack Web Developer passionate
               about building modern, scalable and meaningful digital
@@ -103,12 +95,27 @@ const About_page = () => {
         </section>
 
         <section className="about-intro-section glass-card">
-          <div className="about-section-title">
-            <span className="about-page-label">MY JOURNEY</span>
-            <h2>A Little About Me</h2>
+
+          <div className="about-intro-image">
+            <div className="about-image-frame"></div>
+
+            <img
+              src={aboutImage}
+              alt="Sunil Shelke - Full Stack Web Developer"
+            />
+
+            <div className="about-image-badge">
+              <span>5+</span>
+              <small>Years Experience</small>
+            </div>
           </div>
 
           <div className="about-intro-content">
+            <div className="about-section-title">
+              <span className="about-page-label">MY JOURNEY</span>
+              <h2>A Little About Me</h2>
+            </div>
+
             <p>
               I am a web developer with 5+ years of experience in
               developing modern websites and web applications. My
@@ -132,6 +139,7 @@ const About_page = () => {
               reliable, maintainable and useful.
             </p>
           </div>
+
         </section>
 
         <section className="about-expertise-section">
@@ -179,6 +187,22 @@ const About_page = () => {
               <div className="about-tech-item" key={index}>
                 <CheckCircle2 size={17} />
                 <span>{tech}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="about-highlights-section">
+          <div className="about-section-title">
+            <span className="about-page-label">MY STRENGTHS</span>
+            <h2>What I Bring to a Project</h2>
+          </div>
+
+          <div className="about-highlights-grid">
+            {highlights.map((item, index) => (
+              <div className="about-highlight-item glass-card" key={index}>
+                <CheckCircle2 size={20} />
+                <span>{item}</span>
               </div>
             ))}
           </div>
