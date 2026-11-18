@@ -7,20 +7,21 @@ import { Autoplay } from 'swiper/modules'
 
 import 'swiper/css'
 import './Project.scss'
-
+import img1 from '../../assets/Project/akkafoundation.png'
+import img2 from '../../assets/Project/creovista.png'
 const projects = [
   {
-    title: 'Healthcare Management System',
-    category: 'React.js, Dashboard & API Integration',
-    image: '/projects/healthcare.png',
-    slug: 'healthcare-management-system'
+    title: 'Akka Foundation Website',
+    category: 'React.js, UI Development, API Integration',
+    image: img1,
+    slug: 'akka-foundation-website'
   },
-  {
-    title: 'Digital Agency Website',
-    category: 'React.js, UI Development',
-    image: '/projects/agency.png',
-    slug: 'digital-agency-website'
-  },
+{
+  title: 'Creovista Digital Agency Website',
+  category: 'WordPress, Custom Page Template Development',
+  image: img2,
+  slug: 'creovista-digital-agency'
+},
   {
     title: 'NGO Website',
     category: 'Website Development, WordPress',

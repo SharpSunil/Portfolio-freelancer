@@ -1,59 +1,93 @@
-
+import img1 from '../assets/Project/akkafoundation.png'
+import img2 from '../assets/Project/creovista.png'
 const projects = [
+
+
   {
     id: 1,
-    slug: 'healthcare-management-system',
-    title: 'Healthcare Management System',
-    category: 'Healthcare Web Application',
-    subtitle: 'Smart Healthcare Management Solution',
+    slug: 'akka-foundation-website',
+    title: 'Akka Foundation Website',
+    category: 'Non-Profit Organization / NGO',
+    subtitle: 'A Digital Platform for Social Impact',
     description:
-      'A complete healthcare management application designed to simplify hospital operations, manage doctors, appointments, patients and administrative workflows.',
-    image: '/projects/healthcare.png',
-    duration: 'Project Development',
-    role: 'Frontend & API Integration',
-    technologies: ['React.js', 'JavaScript', 'Ant Design', 'REST API', 'SCSS'],
-    features: [
-      'Doctor and patient management',
-      'Appointment management system',
-      'Hospital and department management',
-      'Dynamic data tables and reports',
-      'API integration',
-      'Responsive dashboard interface'
+      'Designed and developed a complete digital platform for Akka Foundation, a non-profit organization dedicated to community development and social welfare. The website showcases the foundation’s social initiatives, community activities, awareness campaigns and projects focused on creating positive change in society.',
+
+    image: img1,
+
+    duration: '2 months (UI Design & Frontend Development)',
+    role: 'Complete UI Design & Frontend Development, API integration, Responsive Layouts, Content Management System',
+
+    technologies: [
+      'React.js',
+      'JavaScript',
+      'SCSS',
+      'HTML5',
+      'SCSS',
+      'REST API',
+      'Responsive Design'
     ],
-    challenge:
-      'Managing multiple healthcare operations and presenting complex information through a structured and easy-to-use interface.',
-    solution:
-      'Developed reusable React components, dynamic tables and API integrations to simplify administrative workflows and improve usability.',
-    liveUrl: '',
-    githubUrl: ''
-  },
-  {
-    id: 2,
-    slug: 'digital-agency-website',
-    title: 'Digital Agency Website',
-    category: 'Business Website',
-    subtitle: 'Modern Digital Agency Experience',
-    description:
-      'A modern digital agency website designed to showcase services, projects and business information through an engaging and responsive user interface.',
-    image: '/projects/agency.png',
-    duration: 'Project Development',
-    role: 'Frontend Development',
-    technologies: ['React.js', 'JavaScript', 'SCSS', 'GSAP', 'Swiper'],
+
     features: [
-      'Responsive website design',
-      'Interactive hero section',
-      'Service and project sections',
-      'Smooth animations and transitions',
-      'Contact form integration',
-      'Modern user interface'
+      'Complete website UI design and layout development',
+      'NGO profile and foundation information',
+      'Women empowerment initiatives',
+      'Education and community development programs',
+      'Healthcare awareness and medical initiatives',
+      'Drushti Abhiyan – Eye care initiative',
+      'Project Anandi – Menstrual hygiene awareness',
+      'Environment and water conservation activities',
+      'Agriculture and farmer support initiatives',
+      'Events, activities and gallery sections',
+      'Responsive layouts for mobile, tablet and desktop'
     ],
+
     challenge:
-      'Creating an attractive digital presence while maintaining smooth interactions, responsive layouts and consistent visual design.',
+      'Presenting the foundation’s diverse social initiatives, projects and community activities through a single, engaging and easy-to-navigate digital platform while communicating its non-profit mission effectively.',
+
     solution:
-      'Built reusable React components with modern styling, animations and responsive layouts to create an engaging website experience.',
-    liveUrl: '',
+      'Designed the complete website UI and developed responsive frontend components to organize the foundation’s initiatives into clear sections. Created dedicated layouts for social projects, awareness campaigns, events, activities and organizational information to make the website informative, accessible and engaging.',
+
+    liveUrl: 'https://akkafoundation.in',
     githubUrl: ''
-  },
+  }
+  ,
+ {
+  id: 2,
+  slug: 'creovista-digital-agency',
+  title: 'Creovista Digital Marketing Agency',
+  category: 'Digital Marketing Agency Website',
+  subtitle: 'Custom WordPress Website Development',
+  description:
+    'A professional website developed for Creovista, a digital marketing agency, to showcase its services, expertise and digital solutions through a modern and responsive online presence.',
+  image: img2,
+  duration: 'Website Development',
+  role: 'WordPress Setup & Custom Template Development',
+  technologies: [
+    'WordPress',
+    'PHP',
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'SCSS',
+    'Responsive Design'
+  ],
+  features: [
+    'Complete WordPress installation and setup',
+    'Custom page templates developed from scratch',
+    'Custom website layout and UI implementation',
+    'Service-wise individual pages',
+    'Responsive design for mobile and desktop',
+    'Dynamic WordPress content management',
+    'Contact form integration',
+    'Reusable page sections and components'
+  ],
+  challenge:
+    'Creating a professional digital presence for a digital marketing agency while ensuring flexibility, responsive layouts and easy content management through WordPress.',
+  solution:
+    'Set up WordPress and developed custom page templates from scratch, implementing the website UI and reusable layouts to create a responsive and manageable website.',
+  liveUrl: 'https://creovista.in/',
+  githubUrl: ''
+},
   {
     id: 3,
     slug: 'ngo-website',
