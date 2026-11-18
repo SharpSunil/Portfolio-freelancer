@@ -1,5 +1,7 @@
 import img1 from '../assets/Project/akkafoundation.png'
 import img2 from '../assets/Project/creovista.png'
+import img3 from '../assets/Project/diwiseglobal.png'
+import img4 from '../assets/Project/deeva.png'
 const projects = [
 
 
@@ -88,33 +90,88 @@ const projects = [
   liveUrl: 'https://creovista.in/',
   githubUrl: ''
 },
-  {
-    id: 3,
-    slug: 'ngo-website',
-    title: 'NGO Website',
-    category: 'Non-Profit Website',
-    subtitle: 'Digital Platform for Social Impact',
-    description:
-      'A website for a non-profit organization to showcase its initiatives, social activities, projects and community development work.',
-    image: '/projects/ngo.png',
-    duration: 'Project Development',
-    role: 'Website Development',
-    technologies: ['WordPress', 'PHP', 'MySQL', 'HTML', 'CSS', 'SEO'],
-    features: [
-      'Organization and mission pages',
-      'Dynamic blog management',
-      'Project and activity showcases',
-      'Donation-focused sections',
-      'Content management system',
-      'SEO-friendly website structure'
-    ],
-    challenge:
-      'Presenting the organization’s activities and initiatives in a clear, accessible and engaging way.',
-    solution:
-      'Developed structured website pages and dynamic content management functionality to make content updates easier.',
-    liveUrl: '',
-    githubUrl: ''
-  }
+ {
+  id: 3,
+  slug: 'diwise-global-website',
+  title: 'DIwise Global Website',
+  category: 'Next.js, UI/UX Design & Frontend Development',
+  subtitle: 'Global Digital Marketing & Business Solutions',
+  description:
+    'A modern website for DIwise Global, developed to showcase its digital marketing services, web development solutions and business capabilities through a professional and responsive digital experience.',
+  image: img3,
+  duration: 'Website Design & Development',
+  role: 'UI Design, Frontend Development, API Integration & Deployment',
+  technologies: [
+    'Next.js',
+    'React.js',
+    'JavaScript',
+    'HTML5',
+    'CSS3',
+    'SCSS',
+    'REST API',
+    'Responsive Design'
+  ],
+  features: [
+    'Complete website UI design',
+    'Reusable and modular React components',
+    'Custom frontend development using Next.js',
+    'API integration',
+    'Responsive website layouts',
+    'Dynamic and reusable page sections',
+    'SEO-friendly website structure',
+    'Domain registration and configuration',
+    'Global hosting setup and deployment'
+  ],
+  challenge:
+    'Building a professional global agency website with a consistent UI, reusable component structure, smooth user experience and reliable API integration.',
+  solution:
+    'Designed the website UI and developed the frontend using Next.js with reusable components to maintain a scalable structure. Integrated APIs and handled domain registration, configuration and global hosting deployment.',
+  liveUrl: 'https://diwiseglobal.com/',
+  githubUrl: ''
+},
+{
+  id: 4,
+  slug: 'deeva-karnani-shah-website',
+  title: 'Deeva Karnani Shah Portfolio Website',
+  category: 'React.js, UI Design & Frontend Development',
+  subtitle: 'Personal Author Portfolio & Digital Presence',
+  description:
+    'A custom-designed personal portfolio website for Deeva Karnani Shah, showcasing her journey as a young author, published books, achievements, awards, charity initiatives and creative work through an engaging and responsive digital experience.',
+  image: img4,
+  duration: 'Website Design & Development',
+  role: 'Complete UI Design & Frontend Development',
+  technologies: [
+    'React.js',
+    'Vite',
+    'JavaScript',
+    'HTML5',
+    'CSS3',
+    'SCSS',
+    'React Router',
+    'Responsive Design',
+    'SEO'
+  ],
+  features: [
+    'Complete website UI design from scratch',
+    'Reusable React component architecture',
+    'Custom frontend development using React and Vite',
+    'Responsive layouts for desktop, tablet and mobile',
+    'Dedicated sections for books and publications',
+    'Awards and achievements showcase',
+    'Charity and social initiatives sections',
+    'Reusable navigation and footer components',
+    'Internal SEO optimization',
+    'Meta titles and descriptions',
+    'Domain registration and configuration',
+    'Global hosting setup and live deployment'
+  ],
+  challenge:
+    'Creating a unique personal website that presents the author’s achievements, books, charity work and personality through a visually engaging and easy-to-navigate experience.',
+  solution:
+    'Designed the complete website UI from scratch and developed the frontend using React.js and Vite. Built reusable components for consistent page layouts, implemented responsive styling, optimized internal SEO and handled domain registration and hosting deployment.',
+  liveUrl: 'https://deevakarnanishah.com/',
+  githubUrl: ''
+},
 ]
 
 export default projects;

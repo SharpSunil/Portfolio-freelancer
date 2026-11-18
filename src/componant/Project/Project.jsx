@@ -9,6 +9,8 @@ import 'swiper/css'
 import './Project.scss'
 import img1 from '../../assets/Project/akkafoundation.png'
 import img2 from '../../assets/Project/creovista.png'
+import img3 from '../../assets/Project/diwiseglobal.png'
+import img4 from '../../assets/Project/deeva.png'
 const projects = [
   {
     title: 'Akka Foundation Website',
@@ -23,11 +25,17 @@ const projects = [
   slug: 'creovista-digital-agency'
 },
   {
-    title: 'NGO Website',
-    category: 'Website Development, WordPress',
-    image: '/projects/ngo.png',
-    slug: 'ngo-website'
-  }
+  title: 'DIwise Global Website',
+  category: 'Next.js, UI Design & API Integration',
+  image: img3,
+  slug: 'diwise-global-website'
+},
+{
+  title: 'Deeva Karnani Shah Portfolio',
+  category: 'React.js, Vite & Custom UI Development',
+  image: img4,
+  slug: 'deeva-karnani-shah-website'
+},
 ]
 
 const Project = () => {
