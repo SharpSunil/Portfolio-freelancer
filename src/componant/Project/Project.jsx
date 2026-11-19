@@ -11,8 +11,8 @@ import img1 from '../../assets/Project/akkafoundation.png'
 import img2 from '../../assets/Project/creovista.png'
 import img3 from '../../assets/Project/diwiseglobal.png'
 import img4 from '../../assets/Project/deeva.png'
-import img5 from '../assets/Project/orthox.png'
-import img6 from '../assets/Project/kpuri.png'
+import img5 from '../../assets/Project/orthox.png'
+import img6 from '../../assets/Project/kpuri.png'
 const projects = [
   {
     title: 'Akka Foundation Website',
