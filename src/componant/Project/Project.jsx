@@ -11,6 +11,8 @@ import img1 from '../../assets/Project/akkafoundation.png'
 import img2 from '../../assets/Project/creovista.png'
 import img3 from '../../assets/Project/diwiseglobal.png'
 import img4 from '../../assets/Project/deeva.png'
+import img5 from '../assets/Project/orthox.png'
+import img6 from '../assets/Project/kpuri.png'
 const projects = [
   {
     title: 'Akka Foundation Website',
@@ -35,6 +37,18 @@ const projects = [
   category: 'React.js, Vite & Custom UI Development',
   image: img4,
   slug: 'deeva-karnani-shah-website'
+},
+{
+  title: 'Orthox Clinic Website',
+  category: 'WordPress, Custom UI & Multilingual Development',
+  image: img5,
+  slug: 'orthox-clinic-website'
+},
+{
+  title: 'K. Puri & Associates Website',
+  category: 'React.js, Vite & Custom UI Development',
+  image: img6,
+  slug: 'kpuri-associates-website'
 },
 ]
 

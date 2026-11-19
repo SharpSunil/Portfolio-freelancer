@@ -2,6 +2,8 @@ import img1 from '../assets/Project/akkafoundation.png'
 import img2 from '../assets/Project/creovista.png'
 import img3 from '../assets/Project/diwiseglobal.png'
 import img4 from '../assets/Project/deeva.png'
+import img5 from '../assets/Project/orthox.png'
+import img6 from '../assets/Project/kpuri.png'
 const projects = [
 
 
@@ -172,6 +174,87 @@ const projects = [
   liveUrl: 'https://deevakarnanishah.com/',
   githubUrl: ''
 },
+{
+  id: 5,
+  slug: 'orthox-clinic-website',
+  title: 'Orthox Clinic Website',
+  category: 'WordPress, Custom UI & Multilingual Development',
+  subtitle: 'Modern Healthcare Website for Orthopedic Excellence',
+  description:
+    'A custom-designed website for Orthox Clinic, showcasing orthopedic treatments, medical specialists, healthcare services and clinic information through a modern, professional and responsive digital experience.',
+  image: img5,
+  duration: 'Website Design & Development',
+  role: 'Custom UI Design, WordPress Development & Deployment',
+  technologies: [
+    'WordPress',
+    'PHP',
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'SCSS',
+    'Swiper.js',
+    'Responsive Design'
+  ],
+  features: [
+    'Custom website UI design',
+    'WordPress website setup and development',
+    'Multilingual language toggle module',
+    'Multiple Swiper slider implementations',
+    'Custom responsive layouts',
+    'Doctor and specialist sections',
+    'Treatment and healthcare service pages',
+    'Interactive content sections',
+    'Responsive mobile and tablet design',
+    'Domain registration and configuration',
+    'Hosting setup on Hostinger',
+    'Live website deployment'
+  ],
+  challenge:
+    'Creating a professional healthcare website that presents complex medical services clearly while delivering a premium user experience, multilingual accessibility and engaging interactive sections.',
+  solution:
+    'Designed and developed a custom WordPress website with responsive layouts, multilingual functionality and multiple Swiper-based sections. Configured the domain, hosting environment and deployed the website live on Hostinger for global accessibility.',
+  liveUrl: 'https://orthoxclinic.com/',
+  githubUrl: ''
+},
+{
+  id: 6,
+  slug: 'kpuri-associates-website',
+  title: 'K. Puri & Associates Website',
+  category: 'React.js, Vite & Custom UI Development',
+  subtitle: 'Professional Single-Page Business Website',
+  description:
+    'A professional single-page website developed for K. Puri & Associates, featuring custom-designed sections, interactive popup experiences and a streamlined contact experience for business inquiries.',
+  image: img6,
+  duration: 'Website Design & Development',
+  role: 'UI Design & Frontend Development',
+  technologies: [
+    'React.js',
+    'Vite',
+    'JavaScript',
+    'HTML5',
+    'CSS3',
+    'SCSS',
+    'Google Sheets API',
+    'Responsive Design'
+  ],
+  features: [
+    'Custom single-page website design',
+    'Reusable React component architecture',
+    'Multiple interactive popup and modal interfaces',
+    'Dynamic contact and inquiry forms',
+    'Direct Google Sheets integration',
+    'Form submissions stored in Google Sheets',
+    'Reusable UI sections and layouts',
+    'Responsive design for desktop and mobile',
+    'Interactive user experience'
+  ],
+  challenge:
+    'Creating a professional single-page website with multiple interactive popup interfaces while keeping the design consistent, responsive and easy to maintain.',
+  solution:
+    'Designed and developed the complete UI using React.js and Vite with reusable components. Implemented multiple popup interactions and integrated contact forms directly with Google Sheets to store submitted inquiry data.',
+  liveUrl: 'https://www.kpuriandassociates.com/',
+  githubUrl: ''
+}
 ]
 
 export default projects;

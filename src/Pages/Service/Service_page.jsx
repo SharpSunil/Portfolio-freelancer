@@ -9,9 +9,6 @@ import {
     Gauge,
     Code2,
     Smartphone,
-    ShoppingCart,
-    Search,
-    Server,
     Workflow,
     ArrowUpRight,
     CheckCircle2
