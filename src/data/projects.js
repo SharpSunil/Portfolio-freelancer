@@ -4,6 +4,7 @@ import img3 from '../assets/Project/diwiseglobal.png'
 import img4 from '../assets/Project/deeva.png'
 import img5 from '../assets/Project/orthox.png'
 import img6 from '../assets/Project/kpuri.png'
+import img7 from '../assets/Project/neshma.png'
 const projects = [
 
 
@@ -254,7 +255,43 @@ const projects = [
     'Designed and developed the complete UI using React.js and Vite with reusable components. Implemented multiple popup interactions and integrated contact forms directly with Google Sheets to store submitted inquiry data.',
   liveUrl: 'https://www.kpuriandassociates.com/',
   githubUrl: ''
-}
+},
+{
+  id: 7,
+  slug: 'neshma-academy-website',
+  title: 'Neshma Academy Website',
+  category: 'WordPress Website',
+  subtitle: 'Acting & Voice Acting Academy Platform',
+  description:
+    'A WordPress website for Neshma Academy of Acting and Voice Acting (NAAVA), showcasing courses, workshops, events, academy information and performing arts programs through an engaging digital platform.',
+  image: img7,
+  duration: 'Website Development & Maintenance',
+  role: 'WordPress Development & Website Maintenance',
+  technologies: [
+    'WordPress',
+    'PHP',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'SEO'
+  ],
+  features: [
+    'Creation of new website pages',
+    'Website content updates and management',
+    'Event and workshop updates',
+    'Custom backgrounds and visual assets',
+    'Image creation and optimization',
+    'Website maintenance and improvements',
+    'WordPress content management',
+    'Server maintenance and troubleshooting'
+  ],
+  challenge:
+    'Maintaining an engaging website while regularly updating academy courses, events, workshops, announcements and visual content to keep information current and accessible.',
+  solution:
+    'Managed and enhanced the WordPress website by creating new pages, updating content, designing visual assets, publishing events and performing ongoing website and server maintenance.',
+  liveUrl: 'https://neshmaaacademy.com/',
+  githubUrl: ''
+},
 ]
 
 export default projects;
