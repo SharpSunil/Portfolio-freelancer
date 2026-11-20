@@ -5,6 +5,8 @@ import img4 from '../assets/Project/deeva.png'
 import img5 from '../assets/Project/orthox.png'
 import img6 from '../assets/Project/kpuri.png'
 import img7 from '../assets/Project/neshma.png'
+import img8 from '../assets/Project/jaintoday.png'
+import img9 from "../assets/Project/gandhi.png"
 const projects = [
 
 
@@ -290,6 +292,83 @@ const projects = [
   solution:
     'Managed and enhanced the WordPress website by creating new pages, updating content, designing visual assets, publishing events and performing ongoing website and server maintenance.',
   liveUrl: 'https://neshmaaacademy.com/',
+  githubUrl: ''
+},
+{
+  id: 8,
+  slug: 'jain-today-news-website',
+  title: 'Jain Today News Website',
+  category: 'WordPress Website',
+  subtitle: 'News & Blogging Platform',
+  description:
+    'A WordPress-based news and blogging website designed and customized according to the client’s requirements. The platform features categorized news sections, article publishing, social media integration, and dedicated advertising spaces for monetization.',
+  image: img8,
+  duration: 'Website Design & Development',
+  role: 'Custom UI Design & WordPress Development',
+  technologies: [
+    'WordPress',
+    'PHP',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Responsive Design',
+    'SEO'
+  ],
+  features: [
+    'Custom website design based on client requirements',
+    'News and blog publishing system',
+    'Category-based news sections',
+    'Custom responsive layouts',
+    'Advertising banner placements',
+    'Social media integration',
+    'Contact section',
+    'WordPress content management',
+    'Mobile responsive design'
+  ],
+  challenge:
+    'Creating a news website that organizes multiple categories of news in a clean, readable layout while providing dedicated advertising spaces without affecting the user experience.',
+  solution:
+    'Designed and customized a WordPress news platform with category-based content sections, responsive layouts, social media integration and strategically placed advertising spaces to support the client’s requirements.',
+  liveUrl: 'https://jaintoday.com/',
+  githubUrl: ''
+},
+{
+  id: 9,
+  slug: 'gandhi-travels-website',
+  title: 'Gandhi Travels Website',
+  category: 'React.js, WordPress Blog API Integration',
+  subtitle: 'Travel Website with Headless WordPress Blog',
+  description:
+    'A travel website developed using React.js with a WordPress-powered blog system. The website features a custom frontend design, travel-related content, and dynamic blog integration using WordPress REST API to manage and display blog posts.',
+  image: img9,
+  duration: 'Website Design & Development',
+  role: 'Frontend Development & WordPress API Integration',
+  technologies: [
+    'React.js',
+    'JavaScript',
+    'WordPress',
+    'WordPress REST API',
+    'HTML5',
+    'CSS3',
+    'SCSS',
+    'Responsive Design'
+  ],
+  features: [
+    'Custom React.js website development',
+    'Responsive UI design',
+    'WordPress blog backend setup',
+    'Custom WordPress blog API integration',
+    'Dynamic blog listing',
+    'Dynamic blog details pages',
+    'Blog content management through WordPress',
+    'Travel-related content sections',
+    'Responsive design for mobile and desktop'
+  ],
+  challenge:
+    'Developing a modern travel website while allowing the client to manage blog content independently through WordPress without requiring frontend code changes for every new blog post.',
+  solution:
+    'Built the website using React.js and integrated WordPress as a headless CMS through its REST API, allowing blog posts to be created and managed from WordPress and dynamically displayed on the React frontend.',
+  liveUrl: 'https://gandhitravels.co.in/',
   githubUrl: ''
 },
 ]

@@ -14,6 +14,8 @@ import img4 from '../../assets/Project/deeva.png'
 import img5 from '../../assets/Project/orthox.png'
 import img6 from '../../assets/Project/kpuri.png'
 import img7 from '../../assets/Project/neshma.png'
+import img8 from '../../assets/Project/jaintoday.png'
+import img9 from '../../assets/Project/gandhi.png'
 const projects = [
   {
     title: 'Akka Foundation Website',
@@ -56,6 +58,18 @@ const projects = [
   category: 'WordPress, Website Development & Maintenance',
   image: img7,
   slug: 'neshma-academy-website'
+},
+{
+  title: 'Jain Today News Website',
+  category: 'WordPress, Custom UI Design & Ad Integration',
+  image: img8,
+  slug: 'jain-today-news-website'
+},
+{
+  title: 'Gandhi Travels Website',
+  category: 'React.js, Headless WordPress & API Integration',
+  image: img9,
+  slug: 'gandhi-travels-website'
 },
 ]
 
