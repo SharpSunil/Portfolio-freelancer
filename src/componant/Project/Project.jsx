@@ -16,6 +16,7 @@ import img6 from '../../assets/Project/kpuri.png'
 import img7 from '../../assets/Project/neshma.png'
 import img8 from '../../assets/Project/jaintoday.png'
 import img9 from '../../assets/Project/gandhi.png'
+import img10 from '../../assets/Project/greenage.png'
 const projects = [
   {
     title: 'Akka Foundation Website',
@@ -70,6 +71,12 @@ const projects = [
   category: 'React.js, Headless WordPress & API Integration',
   image: img9,
   slug: 'gandhi-travels-website'
+},
+{
+  title: 'Green Age Packaging Website',
+  category: 'WordPress, E-Commerce & Custom Plugin Development',
+  image: img10,
+  slug: 'green-age-packaging-website'
 },
 ]
 

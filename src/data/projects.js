@@ -7,6 +7,7 @@ import img6 from '../assets/Project/kpuri.png'
 import img7 from '../assets/Project/neshma.png'
 import img8 from '../assets/Project/jaintoday.png'
 import img9 from "../assets/Project/gandhi.png"
+import img10 from "../assets/Project/greenage.png"
 const projects = [
 
 
@@ -369,6 +370,47 @@ const projects = [
   solution:
     'Built the website using React.js and integrated WordPress as a headless CMS through its REST API, allowing blog posts to be created and managed from WordPress and dynamically displayed on the React frontend.',
   liveUrl: 'https://gandhitravels.co.in/',
+  githubUrl: ''
+},
+{
+  id: 10,
+  slug: 'green-age-packaging-website',
+  title: 'Green Age Packaging Website',
+  category: 'WordPress, E-Commerce & Custom Plugin Development',
+  subtitle: 'Custom Packaging E-Commerce Platform',
+  description:
+    'An e-commerce website developed for Green Age Packaging, offering a wide range of packaging products for businesses, cafes, cloud kitchens and FMCG brands. The website includes custom WordPress plugin development based on client requirements, product management and bulk product handling.',
+  image: img10,
+  duration: 'Website Development & Custom Plugin Development',
+  role: 'WordPress Development, E-Commerce & Custom Plugin Development',
+  technologies: [
+    'WordPress',
+    'PHP',
+    'WooCommerce',
+    'JavaScript',
+    'HTML5',
+    'CSS3',
+    'SCSS',
+    'Custom Plugin Development',
+    'Responsive Design'
+  ],
+  features: [
+    'Custom WordPress e-commerce website',
+    'Custom plugin development based on client requirements',
+    'Bulk product management and product upload',
+    'Product categories and catalog management',
+    'E-commerce functionality',
+    'Custom product layouts',
+    'Search and product navigation',
+    'Responsive design',
+    'Client-specific functionality and customization',
+    'WordPress backend management'
+  ],
+  challenge:
+    'Developing an e-commerce platform capable of handling a large product catalog while meeting the client’s specific business requirements and simplifying bulk product management.',
+  solution:
+    'Developed a customized WordPress e-commerce website and created custom plugins to fulfill client-specific requirements, including bulk product management and streamlined product catalog operations.',
+  liveUrl: 'https://greenagepackaging.com/',
   githubUrl: ''
 },
 ]
