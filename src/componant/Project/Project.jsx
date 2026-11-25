@@ -7,47 +7,47 @@ import { Autoplay } from 'swiper/modules'
 
 import 'swiper/css'
 import './Project.scss'
-import img1 from '../../assets/Project/akkafoundation.png'
+// import img1 from '../../assets/Project/akkafoundation.png'
 import img2 from '../../assets/Project/creovista.png'
-import img3 from '../../assets/Project/diwiseglobal.png'
-import img4 from '../../assets/Project/deeva.png'
-import img5 from '../../assets/Project/orthox.png'
+// import img3 from '../../assets/Project/diwiseglobal.png'
+// import img4 from '../../assets/Project/deeva.png'
+// import img5 from '../../assets/Project/orthox.png'
 import img6 from '../../assets/Project/kpuri.png'
 import img7 from '../../assets/Project/neshma.png'
 import img8 from '../../assets/Project/jaintoday.png'
 import img9 from '../../assets/Project/gandhi.png'
 import img10 from '../../assets/Project/greenage.png'
 const projects = [
-  {
-    title: 'Akka Foundation Website',
-    category: 'React.js, UI Development, API Integration',
-    image: img1,
-    slug: 'akka-foundation-website'
-  },
+  // {
+  //   title: 'Akka Foundation Website',
+  //   category: 'React.js, UI Development, API Integration',
+  //   image: img1,
+  //   slug: 'akka-foundation-website'
+  // },
 {
   title: 'Creovista Digital Agency Website',
   category: 'WordPress, Custom Page Template Development',
   image: img2,
   slug: 'creovista-digital-agency'
 },
-  {
-  title: 'DIwise Global Website',
-  category: 'Next.js, UI Design & API Integration',
-  image: img3,
-  slug: 'diwise-global-website'
-},
-{
-  title: 'Deeva Karnani Shah Portfolio',
-  category: 'React.js, Vite & Custom UI Development',
-  image: img4,
-  slug: 'deeva-karnani-shah-website'
-},
-{
-  title: 'Orthox Clinic Website',
-  category: 'WordPress, Custom UI & Multilingual Development',
-  image: img5,
-  slug: 'orthox-clinic-website'
-},
+//   {
+//   title: 'DIwise Global Website',
+//   category: 'Next.js, UI Design & API Integration',
+//   image: img3,
+//   slug: 'diwise-global-website'
+// },
+// {
+//   title: 'Deeva Karnani Shah Portfolio',
+//   category: 'React.js, Vite & Custom UI Development',
+//   image: img4,
+//   slug: 'deeva-karnani-shah-website'
+// },
+// {
+//   title: 'Orthox Clinic Website',
+//   category: 'WordPress, Custom UI & Multilingual Development',
+//   image: img5,
+//   slug: 'orthox-clinic-website'
+// },
 {
   title: 'K. Puri & Associates Website',
   category: 'React.js, Vite & Custom UI Development',
